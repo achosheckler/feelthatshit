@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="UTF-8">
+	<title>FULL PAGE HORIZONTAL SLIDE SLIDER css only</title>    
+	<link rel="stylesheet" href="css/style.css">
+	
+	<!-- scroll right -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+	</script>
+	<!--<script type="text/javascript" src="/js/common.js"></script>-->
+	<script type="text/javascript" src="js/jquery.simplyscroll.js"></script>
+	<link rel="stylesheet" href="js/jquery.simplyscroll.css" media="all" type="text/css">
+	<script type="text/javascript">
+		(function($) {
+			$(function() {
+				$("#scroller").simplyScroll({frameRate:600});
+			});
+		})(jQuery);
+	</script>
+	<!-- fin scroll right -->
+
+</head>
+
+<body>
+
+	<ul id="scroller">
+		<li><div id="slide" class="slide1"></div></li>
+		<li><div id="slide" class="slide2"></div></li>
+		<li><div id="slide" class="slide3"></div></li>
+		<li><div id="slide" class="slide4"></div></li>
+	</ul>
+
+	<div id="title">SCROLL RIGHT</div> 
+
+</body>
+</html>

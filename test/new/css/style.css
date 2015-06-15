@@ -1,0 +1,46 @@
+html, body {
+margin: 0; 
+padding: 0; 
+height: 100%;
+width:200%;
+}
+
+#slide{
+  height:100%;
+  width:100%;
+  min-height:100%;
+  float:left;
+}
+
+.slide1{
+  background:url(../group1/BGgroup0.gif) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.slide2{
+  background:url(../group2/BGgroup2.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.slide3{
+  background:url(../group2/BGgroup2_diagonal.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.slide4{background:#16a085;}
+
+#title{
+  position:fixed;
+  top:50%;
+  text-align:center;
+  width:100%;
+  color:#fff;
+  font-family:Futura;
+  font-size:1.5em;
+}

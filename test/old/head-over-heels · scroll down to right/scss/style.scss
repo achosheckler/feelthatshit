@@ -1,0 +1,144 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:300);
+
+*, *:before, *:after {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color:white;
+}
+
+body, .horizontal-parent {overflow:hidden;}
+
+.horizontal-parent {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+}
+
+// number of slides
+$slides:4;
+
+// This is the wrapper for the slides
+.horizontal-child {
+  position:relative;
+  display:block;
+  width:100vh;
+  height:100vw;
+  overflow:scroll;
+  transform-origin:100% 0%;
+  transform:rotate(-90deg) translateY(-100vh);
+  
+  // each slide should be the size of the viewport
+  .slide {
+    z-index:2;
+    display:flex;
+    position:absolute;
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+    text-align:center;
+    transform-origin:0% 0%;
+    
+    &:after {
+      content:'';
+      position:absolute;
+      background-image:linear-gradient(#A2BA0C, #A2BA0C);
+      // background-attachment fixed does the magic on the background
+      background-attachment:fixed;
+      background-position:0 0;
+      background-repeat:no-repeat;
+      z-index:-1;
+    }
+
+    // As every .slide is positioned absolute, we translate each on the x-axis
+    // by nth * viewport-width >> so they sit next to each other
+    // like this: □□□□
+    // + rotate them by 90deg
+    // + slide them up by translate them on the y-axis by 100 viewport-height
+    @for $slide from 1 through $slides {
+      $perc:1 / $slides;
+      $i: ($slide - 1) * $perc;
+      $color:adjust-hue( red, ($slide * 10%) );
+      &:nth-child(#{$slide}) {
+        transform:rotate(90deg) translateY(-100%) translateX(($slide - 1) * 99.9vw);
+        background-color:$color;
+        
+        // trail and error
+        // there's a logic behind it, but I got screwed up by all the rotations
+        &:after {
+          top: $slide * -100%;
+          left: $slide * -100%;
+          width: $slide * 200%;
+          height: $slide * 200%;
+          background-size:($slide * 200%) ($slide * 200%);
+          transform:scale(1-$i);
+        }
+      }    
+    }
+  
+  // center the content of each slide
+  // remember: we set the parent element to display:flex
+  .slide-heading {
+    margin:auto;
+  }
+
+  img {
+      display:block;
+      width:50%;
+      height:auto;
+      margin:auto;
+    }
+  }
+}
+
+#hand-left {fill:red;}
+
+// Some styling
+
+.slide-heading h1 {
+  font-size:7vw;
+  font-weight:300;
+  text-transform:uppercase;
+  letter-spacing:1vw;
+  transform:rotate(180deg);
+}
+
+.slide-heading h2 {
+  font-size:2vw;
+  font-weight:300;
+  text-transform:uppercase;
+  letter-spacing:1vw;
+}
+
+
+
+
+// Hiding the scrollbar
+// for reference >> https://css-tricks.com/custom-scrollbars-in-webkit/
+
+.horizontal-child {
+  &::-webkit-scrollbar {
+    display:none;
+  }
+  
+  &::-webkit-scrollbar-track {
+    display:none;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    display:none;  
+  }
+  
+  &::-webkit-scrollbar-thumb:window-inactive {
+	  display:none; 
+  }
+}
+
+ 
+ 

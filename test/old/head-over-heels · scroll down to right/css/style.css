@@ -1,0 +1,169 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:300);
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+body, .horizontal-parent {
+  overflow: hidden;
+}
+
+.horizontal-parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.horizontal-child {
+  position: relative;
+  display: block;
+  width: 100vh;
+  height: 100vw;
+  overflow: scroll;
+  -webkit-transform-origin: 100% 0%;
+      -ms-transform-origin: 100% 0%;
+          transform-origin: 100% 0%;
+  -webkit-transform: rotate(-90deg) translateY(-100vh);
+      -ms-transform: rotate(-90deg) translateY(-100vh);
+          transform: rotate(-90deg) translateY(-100vh);
+}
+.horizontal-child .slide {
+  z-index: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  -webkit-transform-origin: 0% 0%;
+      -ms-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+.horizontal-child .slide:after {
+  content: '';
+  position: absolute;
+  background-image: -webkit-linear-gradient(#A2BA0C, #A2BA0C);
+  background-image: linear-gradient(#A2BA0C, #A2BA0C);
+  background-attachment: fixed;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.horizontal-child .slide:nth-child(1) {
+  -webkit-transform: rotate(90deg) translateY(-100%) translateX(0vw);
+      -ms-transform: rotate(90deg) translateY(-100%) translateX(0vw);
+          transform: rotate(90deg) translateY(-100%) translateX(0vw);
+  background-color: #ff2b00;
+}
+.horizontal-child .slide:nth-child(1):after {
+  top: -100%;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  background-size: 200% 200%;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+.horizontal-child .slide:nth-child(2) {
+  -webkit-transform: rotate(90deg) translateY(-100%) translateX(99.9vw);
+      -ms-transform: rotate(90deg) translateY(-100%) translateX(99.9vw);
+          transform: rotate(90deg) translateY(-100%) translateX(99.9vw);
+  background-color: #ff5500;
+}
+.horizontal-child .slide:nth-child(2):after {
+  top: -200%;
+  left: -200%;
+  width: 400%;
+  height: 400%;
+  background-size: 400% 400%;
+  -webkit-transform: scale(0.75);
+      -ms-transform: scale(0.75);
+          transform: scale(0.75);
+}
+.horizontal-child .slide:nth-child(3) {
+  -webkit-transform: rotate(90deg) translateY(-100%) translateX(199.8vw);
+      -ms-transform: rotate(90deg) translateY(-100%) translateX(199.8vw);
+          transform: rotate(90deg) translateY(-100%) translateX(199.8vw);
+  background-color: #ff8000;
+}
+.horizontal-child .slide:nth-child(3):after {
+  top: -300%;
+  left: -300%;
+  width: 600%;
+  height: 600%;
+  background-size: 600% 600%;
+  -webkit-transform: scale(0.5);
+      -ms-transform: scale(0.5);
+          transform: scale(0.5);
+}
+.horizontal-child .slide:nth-child(4) {
+  -webkit-transform: rotate(90deg) translateY(-100%) translateX(299.7vw);
+      -ms-transform: rotate(90deg) translateY(-100%) translateX(299.7vw);
+          transform: rotate(90deg) translateY(-100%) translateX(299.7vw);
+  background-color: #ffaa00;
+}
+.horizontal-child .slide:nth-child(4):after {
+  top: -400%;
+  left: -400%;
+  width: 800%;
+  height: 800%;
+  background-size: 800% 800%;
+  -webkit-transform: scale(0.25);
+      -ms-transform: scale(0.25);
+          transform: scale(0.25);
+}
+.horizontal-child .slide .slide-heading {
+  margin: auto;
+}
+.horizontal-child .slide img {
+  display: block;
+  width: 50%;
+  height: auto;
+  margin: auto;
+}
+
+#hand-left {
+  fill: red;
+}
+
+.slide-heading h1 {
+  font-size: 7vw;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1vw;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.slide-heading h2 {
+  font-size: 2vw;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1vw;
+}
+
+.horizontal-child::-webkit-scrollbar {
+  display: none;
+}
+.horizontal-child::-webkit-scrollbar-track {
+  display: none;
+}
+.horizontal-child::-webkit-scrollbar-thumb {
+  display: none;
+}
+.horizontal-child::-webkit-scrollbar-thumb:window-inactive {
+  display: none;
+}

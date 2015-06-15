@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+  padding: 0;
+  height: 100%
+}
+
+/*etiquetas generales*/
+
+body{
+  height: 100%;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 12px;
+}
+
+li{
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+}
+
+#wrapper{
+  height: 100%;
+}
+
+/*etiquetas menu*/
+
+#header{
+  width: 100%;
+  height: 50px;
+  background-color: #222;
+}
+
+#menu_experiments{
+  width: 100%;
+  height: 100%;
+}
+
+#menu_experiments li{
+  display: inline-block;
+  list-style: none;
+  padding: 15px 0 0 20px;
+}
+
+#menu_experiments a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.content{
+  height: 100%;
+}
+
+#outer_wrapper{
+  background-color: #fff;
+  float: left;
+  overflow: scroll;
+  width: 100%; 
+  height: 100%;
+}
+
+#outer_wrapper #inner_wrapper{
+    width: 3600px; /* If you have more elements, increase the width accordingly */
+    height: 100%;
+}
+
+#outer_wrapper #inner_wrapper div.box { /* Define the properties of inner block */
+    width: 1200px;
+    height: 100%;
+    float: left;
+}
+
+.box{
+  height: 700px;
+  width: 100%;
+}
+
+.box h1{
+  padding: 10px 0 0 50px;
+  text-transform: uppercase;
+}
+
+.box1{
+  background-color: #9b59b6;
+}
+
+.box2{
+  background-color: #1abc9c;
+  height: 100%;
+}
+
+.box3{
+  background-color: #e74c3c;
+}
