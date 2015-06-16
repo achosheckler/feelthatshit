@@ -44,3 +44,7 @@ width:200%;
   font-family:Futura;
   font-size:1.5em;
 }
+
+.simply-scroll.simply-scroll-container, .simply-scroll-clip, .simply-scroll-list, #slide {
+	height: 100%;
+}
