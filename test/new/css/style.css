@@ -45,6 +45,6 @@ width:200%;
   font-size:1.5em;
 }
 
-.simply-scroll.simply-scroll-container, .simply-scroll-clip, .simply-scroll-list, #slide {
+.simply-scroll.simply-scroll-container, .simply-scroll-clip, .simply-scroll-list, #slide, .simply-scroll .simply-scroll-list li {
 	height: 100%;
 }
