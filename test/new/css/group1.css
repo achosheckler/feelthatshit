@@ -1,0 +1,254 @@
+		
+
+
+
+
+
+
+		.group1{
+			position:relative;
+			height: auto;
+		 	width: 100%;
+		 	
+			top:0px;
+		 	
+		 	color:grey;
+		 	margin: 0px;
+		 	padding: 0px;
+		 	
+		 	margin:0;
+		    padding:0;  
+		    font-size: 0;
+		}
+
+		.BGgroup1 {
+			position:relative;
+			height: auto;
+		 	width: 100%;
+		 	
+			top:0px;
+		 	
+		 	color:grey;
+		 	margin: 0px;
+		 	padding: 0px;
+		 	overflow:hidden;
+		 	margin:0;
+		    padding:0;  
+		    font-size: 0;
+		}
+
+
+
+		.feelthatshit_1b {
+			position:absolute;
+			height: auto;
+		 	width: 30%;
+		 	
+			top:-4%;
+			left:10%;
+		 	
+		 	
+		 	margin: 0px;
+		 	padding: 0px;
+		 	
+		 	margin:0;
+		    padding:0;  
+		    font-size: 0;
+		    z-index:2;
+		}
+
+
+		.feelthatshit_1c {
+
+			position:absolute;
+			height: auto;
+		 	width: 57%;
+		 	
+			top:17%;
+			left:3%;
+		 	
+		 	
+		 	margin: 0px;
+		 	padding: 0px;
+		 	
+		 	margin:0;
+		    padding:0;  
+		    font-size: 0;
+		    z-index:2;
+
+		}
+
+		.feelthatshit_1d {
+
+			position:absolute;
+			height: auto;
+		 	width: 29%;
+		 	
+			top:28%;
+			left:39%;
+		 	
+		 	
+		 	margin: 0px;
+		 	padding: 0px;
+		 	
+		 	margin:0;
+		    padding:0;  
+		    font-size: 0;
+		    z-index:2;
+
+
+		}
+		
+
+		.feelthatshit_1a {
+
+			position:absolute;
+			height: auto;
+		 	width: 29%;
+		 	
+			top:5%;
+			left:59%;
+		 	
+		 	
+		 	margin: 0px;
+		 	padding: 0px;
+		 	
+		 	margin:0;
+		    padding:0;  
+		    font-size: 0;
+		    z-index:2;
+		}
+
+		.feelthatshit_1e {
+			position:absolute;
+			height: auto;
+		 	width: 40%;
+		 	
+			top:34%;
+			left:20%;
+		 	
+		 	
+		 	margin: 0px;
+		 	padding: 0px;
+		 	
+		 	margin:0;
+		    padding:0;  
+		    font-size: 0;
+		    z-index:1;
+		}
+
+		.feelthatshit_1f {
+			position:absolute;
+			height: auto;
+		 	width: 80%;
+		 	
+			top:34%;
+			left:1%;
+		 	
+		 	
+		 	margin: 0px;
+		 	padding: 0px;
+		 	
+		 	margin:0;
+		    padding:0;  
+		    font-size: 0;
+		    z-index:2;
+
+
+		}
+
+		.feelthatshit_1g {
+
+			position:absolute;
+			height: auto;
+		 	width: 110%;
+		 	
+			top:31%;
+			left:-3%;
+		 	
+		 	
+		 	margin: 0px;
+		 	padding: 0px;
+		 	
+		 	margin:0;
+		    padding:0;  
+		    font-size: 0;
+		    z-index:1;
+
+
+		}
+		
+		.feelthatshit_1h {
+			position:absolute;
+			height: auto;
+		 	width: 100%;
+		 	
+			top:51%;
+			left:-3%;
+		 	
+		 	
+		 	margin: 0px;
+		 	padding: 0px;
+		 	
+		 	margin:0;
+		    padding:0;  
+		    font-size: 0;
+		    z-index:1;
+
+		}
+
+		.feelthatshit_1i {
+			position:absolute;
+			height: auto;
+		 	width: 45%;
+		 	
+			top:35%;
+			left:47%;
+		 	
+		 	
+		 	margin: 0px;
+		 	padding: 0px;
+		 	
+		 	margin:0;
+		    padding:0;  
+		    font-size: 0;
+		    z-index:2;
+
+		}
+
+		.feelthatshit_1j{
+
+			position:absolute;
+			height: auto;
+		 	width: 22%;
+		 	
+			top:68%;
+			left:20%;
+		 	
+		 	
+		 	margin: 0px;
+		 	padding: 0px;
+		 	
+		 	margin:0;
+		    padding:0;  
+		    font-size: 0;
+		    z-index:2;
+
+		}
+
+		@media screen and (max-width: 1000px) {
+
+
+			.heroHeaderText {
+			    font-size: 2em;
+			 
+			  	letter-spacing: .5em;
+
+			  }
+
+		}
+
+		 
+		
+
+		

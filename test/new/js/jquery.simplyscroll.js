@@ -21,16 +21,16 @@ $.fn.simplyScroll = function(options) {
 
 var defaults = {
 	customClass: 'simply-scroll',
-	frameRate: 24, //No of movements per second
+	frameRate: 30, //No of movements per second
 	speed: 1, //No of pixels per frame
 	orientation: 'horizontal', //'horizontal or 'vertical' - not to be confused with device orientation
-	auto: true,
+	auto: false,
 	autoMode: 'loop', //auto = true, 'loop' or 'bounce',
 	manualMode: 'end', //auto = false, 'loop' or 'end'
 	direction: 'forwards', //'forwards' or 'backwards'.
 	pauseOnHover: true, //autoMode = loop|bounce only
-	pauseOnTouch: true, //" touch device only
-	pauseButton: false, //" generates an extra element to allow manual pausing 
+	pauseOnTouch: false, //" touch device only
+	pauseButton: true, //" generates an extra element to allow manual pausing 
 	startOnLoad: false //use this to delay starting of plugin until all page assets have loaded
 };
 	

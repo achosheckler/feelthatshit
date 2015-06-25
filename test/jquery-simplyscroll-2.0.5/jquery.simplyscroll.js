@@ -28,10 +28,10 @@ var defaults = {
 	autoMode: 'loop', //auto = true, 'loop' or 'bounce',
 	manualMode: 'end', //auto = false, 'loop' or 'end'
 	direction: 'forwards', //'forwards' or 'backwards'.
-	pauseOnHover: true, //autoMode = loop|bounce only
+	pauseOnHover: false, //autoMode = loop|bounce only
 	pauseOnTouch: true, //" touch device only
 	pauseButton: false, //" generates an extra element to allow manual pausing 
-	startOnLoad: false //use this to delay starting of plugin until all page assets have loaded
+	startOnLoad: true //use this to delay starting of plugin until all page assets have loaded
 };
 	
 $.simplyScroll = function(el,options) {
