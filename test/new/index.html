@@ -13,7 +13,6 @@
 	<script type="text/javascript" src="js/jquery.transit.min.js"></script>
 	<link rel="stylesheet" href="js/jquery.simplyscroll.css" media="all" type="text/css">
 	
-	
 	<!-- Call this at the end to impose our style -->
 	
 	
@@ -28,6 +27,9 @@
 </head>
 
 <body>
+	
+	<div id="loading"></div>
+
 	<div class="outer stretch">
 		<div class="inner stretch">
 			<ul id="scroller" class="expand">
@@ -329,6 +331,30 @@
 		<textarea class="output" value=""></textarea>
 	</div>-->
 
+<!--PRECARGA TODO-->
+
+	<script type="text/javascript">
+		$(window).load(function() {
+		$("#loading").fadeOut("slow");
+		})
+	</script>
+
+<!--PRECARGA 5 SEG 
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$("#loading").click(function(){
+		$(".target").fadeOut( 'slow', function(){ 
+	  		});
+  		});
+  
+  	var fade_out = function() {
+		$("#loading").fadeOut('slow') .empty();
+		}
+		setTimeout(fade_out, 5000);
+	</script> 
+-->
 
 </body>
 </html>
