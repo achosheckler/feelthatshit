@@ -1,0 +1,151 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   Declare colors, fonts
+   ========================================================= */
+
+/* body */
+$bg_col : #373633;
+$font_family : 'Lato', Calibri, Arial, sans-serif; 
+$main_font_color: #ffffff;
+
+/* grid */
+$grid_bg_col: none;
+$grid_border: none;
+$grid_cells_bg_col: #ff0000;
+$grid_cells_border: 2px solid rgba(255,255,255,0.9);
+
+/* modals */
+$md_bg_col: #63997A;
+$md_hd_bg_color: #40805C;
+$md_overlay_col: rgba(0,0,0,0.9);
+$md_col: #ffffff;
+
+$scroller_height: 200px;
+$scroll_item_height: 175px;
+$scroll_item_width: 125px;
+
+body   {
+  background-color: $bg_col;
+  font-family: $font_family;
+  color: $main_font_color;
+  text-align: center;
+}
+
+
+/**********************************
+ *           GRID STUFF           *
+ **********************************/
+
+.scroller	{
+  background: $grid_bg_col;
+  border: $grid_border;
+  text-align: center;
+  width:100%;
+  height:$scroller_height;
+  position: relative; 
+  overflow: hidden;
+}
+
+.scroller:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.scroller .items {
+  height: 100%;
+  width: 100%;
+  background-color: green;
+  position: absolute;
+}
+
+.scroller .item {
+  background-color: $grid_cells_bg_col;
+  margin-left: 10px;
+  float: left;
+  width: $scroll_item_width;
+  height: $scroll_item_height;
+  margin-top: ($scroller_height - $scroll_item_height)/2;
+}
+
+.scroller .scroll {
+  background-color: rgba(0,0,0,0.5);
+  /* opacity: 0.4; */
+  height: 100%;
+  width: 100px;
+  position: absolute;
+  z-index:1000;
+  visibility: hidden;
+  
+  font-size: 50px;
+  padding-top: ($scroller_height - 60)/2;
+  color: white;
+}
+
+.scroller .scroll.right {
+  right: 0px;
+}
+
+.scroller:hover .scroll {
+  visibility: visible;
+}
+/*
+.scroll.left:hover ~ .items {
+  -webkit-animation: left_scroll linear 5s;
+  -webkit-animation-fill-mode:forwards;
+}
+.scroll.left:hover ~ .items .item {
+}
+
+.scroll.right:hover ~ .items {
+  -webkit-animation: right_scroll linear 5s;
+  -webkit-animation-fill-mode:forwards;
+}
+.scroll.right:hover ~ .items .item {
+}
+*/
+// Animations
+@-webkit-keyframes left_scroll {
+  0% {
+    left: 0px;
+  }  
+  
+  100% {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes right_scroll {
+  0% {
+    right: 0px;
+  }  
+  
+  100% {
+    right: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
