@@ -1,7 +1,9 @@
-$('.group').mouseover(function() {
+$('.inner').mouseover(function() {
   $('.inner').animate({
-    left: '-597%'
-  },25000);  
+    scrollLeft: '14000px'
+  },25000, 'easing');  
+  console.log('scrolling...');
+  //$('.outer').scrollLeft(5000);
 });
 
 $('.shrink').mouseleave(function() {
