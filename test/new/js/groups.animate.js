@@ -1,6 +1,6 @@
 $(window).load(function(){
 	
-	var andebug = false;
+	var andebug = true;
 	
 	//Documentation: http://ricostacruz.com/jquery.transit/
 	
@@ -18,8 +18,10 @@ $(window).load(function(){
 		$(this).transition({scale: [1,1]}, animationSpeed, 'ease');
 	});
 	
+	
 	$ros = $(".rotateOnScroll");
-	var oldScroll = $(window).scrollLeft();
+	$ref = $("#shapes");
+	var oldScroll = $ref.scrollLeft();
 	var wl = 0;
 	var clockwise = true;
 	var max = 0;
@@ -32,12 +34,12 @@ $(window).load(function(){
 	var winWidth = size[0];
 	var winHeight = size[1];
 	
-	$(window).scroll(function(){
+	$ref.scroll(function(){
 		$ros.each(function(){
 			clockwise = $(this).data("clockwise");
 			max = $(this).data("max");
 			left = Math.round($(this).data("left") * $(this).parent().width()); 
-			wl = $(window).scrollLeft();
+			wl = $ref.scrollLeft();
 			start = left-(max*2);
 			
 			if(wl >= start){
@@ -49,7 +51,7 @@ $(window).load(function(){
 				}
 			}
 		 
-			if(andebug) console.log(wl + " " + start + " " + deg);
+			if(andebug) console.log("rotate: " + wl + " " + start + " " + deg);
 			
 		});
 		oldScroll = wl;

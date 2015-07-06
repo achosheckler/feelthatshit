@@ -31,14 +31,32 @@ $(window).load(function(){
 		_groupSize();
 	});
 	
-		
-	$pause.on('hover', function(){
-		$('.simply-scroll-btn-pause').trigger("click");
-	});
+	
 	
 	//_simplyScroll();	
 	
+	$(".snstv").hover(function(){
+		console.log($(this).attr('id'));
+	});
 	
+	$scroll = true;
+
+	if($scroll){
+		$what = $('.inner');
+		$what.stop().animate({
+			scrollLeft: '2000px'
+		},25000, 'swing');  
+		console.log('scrolling...');
+		console.log($what.scrollLeft());
+		
+		$('.pause').hover(function(){
+			$what.stop();
+		}, function(){
+			$what.stop().animate({
+				scrollLeft: '2000px'
+			},25000, 'swing');
+		})
+	}
 	
 	
 });
@@ -91,7 +109,7 @@ function _bgSize(){
 		$me.css('width', newWidth + 'px');	
 		if(debug) console.log("size-me: " + width + " x " + ratio + " = " + newWidth);
 	});
-
+	
 }
 
 function _groupSize(){

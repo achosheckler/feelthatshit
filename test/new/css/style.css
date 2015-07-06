@@ -4,7 +4,8 @@ html, body {
   height: 100%;
   max-height: 100%;
   width: auto;
-  overflow: hidden; }
+  overflow-y: hidden;
+  overflow-x: hidden; }
 
 #loading {
   position: fixed;
@@ -25,47 +26,6 @@ ul {
   box-sizing: border-box; }
 
 /* Positions and base styles */
-li {
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
-  overflow: hidden; }
-
-li span:before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle; }
-
-li span {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(255, 255, 255, 0);
-  z-index: 2; }
-
-li span a {
-  display: inline-block;
-  vertical-align: middle;
-  background-color: white;
-  transition: all 0.3s ease; }
-
-.elem a {
-  width: 0;
-  overflow: hidden;
-  font-size: 0em;
-  color: white; }
-
-.elem:hover a {
-  padding: 1em;
-  font-size: 1em;
-  color: purple;
-  width: 150px;
-  height: 150px;
-  border: solid 0.3em #000; }
-
 /* FIN ROLLOVER */
 .fixedoutput {
   position: fixed;
@@ -149,8 +109,7 @@ li span a {
 .outer {
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  overflow-x: auto; }
+  overflow: hidden; }
 
 .outer .inner {
   position: absolute;
@@ -158,8 +117,7 @@ li span a {
   height: 100%;
   top: 0px;
   left: 0px;
-  overflow: hidden;
-  overflow-x: auto; }
+  overflow: hidden; }
 
 #scroller, #groupScroller {
   position: relative;
@@ -185,6 +143,9 @@ ul#scroller li, ul#groupScroller li {
   width: 100%;
   height: 100%;
   margin-top: 10%; }
+
+.elem .tee {
+  position: absolute; }
 
 #title {
   position: fixed;
