@@ -1,6 +1,6 @@
 $(window).load(function(){
 	
-	var andebug = true;
+	var andebug = false;
 	
 	//Documentation: http://ricostacruz.com/jquery.transit/
 	
@@ -20,7 +20,7 @@ $(window).load(function(){
 	
 	
 	$ros = $(".rotateOnScroll");
-	$ref = $("#shapes");
+	$ref = $(window);
 	var oldScroll = $ref.scrollLeft();
 	var wl = 0;
 	var clockwise = true;
