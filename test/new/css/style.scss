@@ -184,36 +184,8 @@ ul#scroller li, ul#groupScroller li {
 	margin-top: 10%;
 }
 
-.elem .tee {
-	position: absolute;
-	//display: inline-block;
-	width: 0px;
-	height: 0px;
-	top: 25%;
-	left: 25%;
-	right: 0;
-	bottom: 0;
-	transition: all .3s ease;
-	overflow: hidden;
-	z-index: $topmost;
-	text-align: center;
-}
-
-.elem .tee > img {
-	border: solid 5px rgba(0,0,0,0.8);
-	z-index: $topmost;
-}
-
 .showtee {
 	cursor: pointer;
-}
-
-.showtee:hover > .tee {
-	width: 15px;
-	height: 15px;
-	transition: all .3s ease;
-	z-index: $topmost;
-	//@include magnify(100,100);
 }
 
 .teebox {
@@ -221,7 +193,7 @@ ul#scroller li, ul#groupScroller li {
 	display: none;
 	min-width: 100px;
 	min-height: 100px;
-	width: 10%;
+	width: 15%;
 	height: 10%;
 	max-height: 175px;
 	max-width: 187px;

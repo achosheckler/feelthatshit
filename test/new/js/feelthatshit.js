@@ -111,7 +111,7 @@ $(window).load(function(){
 	});
 	
 	$st.mouseleave(function(e){
-		//$tb.hide();
+
 		if(_within(e, $tb)) {
 			console.log("still here");
 		} else {
@@ -119,10 +119,6 @@ $(window).load(function(){
 			$tb.attr("data-elem", "");
 			$tb.hide();
 		}
-	});
-	
-	$tb.mouseenter(function(e){
-		
 	});
 	
 	$tb.mouseleave(function(e){

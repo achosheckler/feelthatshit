@@ -4,11 +4,9 @@
 	<meta charset="UTF-8">
 	<title>Feel That Shit</title>    
 	
-	
-	<!-- scroll right -->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
-	</script>
-	<!--<script type="text/javascript" src="/js/common.js"></script>-->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>if (!window.jQuery) { document.write('<script src="js/jquery-1.11.3.min.js"><\/script>'); }</script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/jquery.simplyscroll.js"></script>
 	<script type="text/javascript" src="js/jquery.transit.min.js"></script>
 	<link rel="stylesheet" href="js/jquery.simplyscroll.css" media="all" type="text/css">
@@ -26,9 +24,10 @@
 </head>
 
 <body>
-	
+	<div class="rightScroll">
+		Hover all over me
+	</div>
 	<div id="loading"></div>
-
 	<div class="outer stretch">
 		<div class="inner stretch">
 			<ul id="scroller" class="expand">
@@ -37,309 +36,381 @@
 						<img src="css/beegees/1.jpg"/>
 					</div>
 				</li>
-				<li class="size-me" data-width="619" data-height="1100"><div class="slide sl2"><img src="css/beegees/2.jpg"/></div></li>
-				<li class="size-me" data-width="800" data-height="1100"><div class="slide sl3"><img src="css/beegees/3.jpg"/></div></li>
-				<li class="size-me" data-width="804" data-height="1100"><div class="slide sl4"><img src="css/beegees/4.jpg"/></div></li>
-				<li class="size-me" data-width="974" data-height="1100"><div class="slide sl5"><img src="css/beegees/5.jpg"/></div></li>
-				<li class="size-me" data-width="800" data-height="1100"><div class="slide sl6"><img src="css/beegees/6.jpg"/></div></li>
-				<li class="size-me" data-width="800" data-height="1100"><div class="slide sl7"><img src="css/beegees/7.jpg"/></div></li>
-				<li class="size-me" data-width="796" data-height="1100"><div class="slide sl8"><img src="css/beegees/8.jpg"/></div></li>
-				<li class="size-me" data-width="800" data-height="1100"><div class="slide sl9"><img src="css/beegees/9.jpg"/></div></li>
-				<li class="size-me" data-width="800" data-height="1100"><div class="slide sl10"><img src="css/beegees/10.jpg"/></div></li>
-				<li class="size-me" data-width="612" data-height="1100"><div class="slide sl11"><img src="css/beegees/11.jpg"/></div></li>
-				<li class="size-me" data-width="746" data-height="1100"><div class="slide sl12"><img src="css/beegees/12.jpg"/></div></li>
-				<li class="size-me" data-width="1152" data-height="1100"><div class="slide sl13"><img src="css/beegees/13.jpg"/></div></li>
-				<li class="size-me" data-width="606" data-height="1100"><div class="slide sl14"><img src="css/beegees/14.jpg"/></div></li>
-				<li class="size-me" data-width="800" data-height="1100"><div class="slide sl15"><img src="css/beegees/15.jpg"/></div></li>
-				<li class="size-me" data-width="907" data-height="1100"><div class="slide sl16"><img src="css/beegees/16.jpg"/></div></li>
-				<li class="size-me" data-width="800" data-height="1100"><div class="slide sl17"><img src="css/beegees/17.jpg"/></div></li>
-				<li class="size-me" data-width="478" data-height="1100"><div class="slide sl18"><img src="css/beegees/18.jpg"/></div></li>
-				<li class="size-me" data-width="549" data-height="1100"><div class="slide sl19"><img src="css/beegees/19.jpg"/></div></li>
-				
+				<li class="size-me" data-width="619" data-height="1100">
+					<div class="slide sl2">
+						<video autoplay="true" loop="true">
+							<source src="css/beegees/2.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+							<source src="css/beegees/2.webm" type='video/webm; codecs="vp8, vorbis"'>
+							<source src="css/beegees/2.ogv" type='video/ogg; codecs="theora, vorbis"'>
+						</video>
+					</div>
+				</li>
+				<li class="size-me" data-width="800" data-height="1100">
+					<div class="slide sl3">
+						<img src="css/beegees/3.jpg"/>
+					</div>
+				</li>
+				<li class="size-me" data-width="804" data-height="1100">
+					<div class="slide sl4">
+						<img src="css/beegees/4.jpg"/>
+					</div>
+				</li>
+				<li class="size-me" data-width="974" data-height="1100">
+					<div class="slide sl5">
+						<img src="css/beegees/5.jpg"/>
+					</div>
+				</li>
+				<li class="size-me" data-width="606" data-height="1100">
+					<div class="slide sl6">
+						<video autoplay="true" loop="true">
+							<source src="css/beegees/14.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+							<source src="css/beegees/14.webm" type='video/webm; codecs="vp8, vorbis"'>
+							<source src="css/beegees/14.ogv" type='video/ogg; codecs="theora, vorbis"'>
+						</video>
+					</div>
+				</li>
+				<li class="size-me" data-width="619" data-height="1100">
+					<div class="slide sl7">
+						<video autoplay="true" loop="true">
+							<source src="css/beegees/2.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+							<source src="css/beegees/2.webm" type='video/webm; codecs="vp8, vorbis"'>
+							<source src="css/beegees/2.ogv" type='video/ogg; codecs="theora, vorbis"'>
+						</video>
+					</div>
+				</li>
+				<li class="size-me" data-width="796" data-height="1100">
+					<div class="slide sl8">
+						<img src="css/beegees/8.jpg"/>
+					</div>
+				</li>
+				<li class="size-me" data-width="800" data-height="1100">
+					<div class="slide sl9">
+						<img src="css/beegees/9.jpg"/>
+					</div>
+				</li>
+				<li class="size-me" data-width="800" data-height="1100">
+					<div class="slide sl10">
+						<img src="css/beegees/10.jpg"/>
+					</div>
+				</li>
+				<li class="size-me" data-width="612" data-height="1100">
+					<div class="slide sl11">
+						<video autoplay="true" loop="true">
+							<source src="css/beegees/11.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+							<source src="css/beegees/11.webm" type='video/webm; codecs="vp8, vorbis"'>
+							<source src="css/beegees/11.ogv" type='video/ogg; codecs="theora, vorbis"'>
+						</video>
+					</div>
+				</li>
+				<li class="size-me" data-width="746" data-height="1100">
+					<div class="slide sl12">
+						<img src="css/beegees/12.jpg"/>
+					</div>
+				</li>
+				<li class="size-me" data-width="1152" data-height="1100">
+					<div class="slide sl13">
+						<img src="css/beegees/13.jpg"/>
+					</div>
+				</li>
+				<li class="size-me" data-width="606" data-height="1100">
+					<div class="slide sl14">
+						<video autoplay="true" loop="true">
+							<source src="css/beegees/14.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+							<source src="css/beegees/14.webm" type='video/webm; codecs="vp8, vorbis"'>
+							<source src="css/beegees/14.ogv" type='video/ogg; codecs="theora, vorbis"'>
+						</video>
+					</div>
+				</li>
+				<li class="size-me" data-width="800" data-height="1100">
+					<div class="slide sl15">
+						<img src="css/beegees/15.jpg"/>
+					</div>
+				</li>
+				<li class="size-me" data-width="907" data-height="1100">
+					<div class="slide sl16">
+						<img src="css/beegees/16.jpg"/>
+					</div>
+				</li>
+				<li class="size-me" data-width="800" data-height="1100">
+					<div class="slide sl17">
+						<img src="css/beegees/17.jpg"/>
+					</div>
+				</li>
+				<li class="size-me" data-width="478" data-height="1100">
+					<div class="slide sl18">
+						<img src="css/beegees/18.jpg"/>
+					</div>
+				</li>
+				<li class="size-me" data-width="549" data-height="1100">
+					<div class="slide sl19">
+						<img src="css/beegees/19.jpg"/>
+					</div>
+				</li>
 			</ul>
 		</div>
 		<div id="shapes" class="inner snstv">
 			<ul id="groupScroller" class="expand snstv">
-				<li id="grupo1" class="group g1 snstv">
-					<div id="elg1" class="elements snstv" data-marginleft="150" data-width="2014" data-height="1028">
-						<div id="g1a" class="elem a snstv">
-								<img class="shrink pause" src="assets/group1/feelthatshit_1a.gif" />
-								
+				<li id="group1" class="group g1 snstv">
+					<div id="elg1" class="elements snstv" data-marginleft="110" data-width="2014" data-height="1028" data-margintop="69">
+						<div id="g1a" class="elem showtee a snstv" data-tee="group1/t_1a.jpg">
+							<img class="shrink pause" src="assets/group1/feelthatshit_1a.gif" />
 						</div>
-						<div id="g1b" class="elem b snstv">
+						<div id="g1b" class="elem showtee b snstv" data-tee="group1/t_1b.jpg">
 							<img src="assets/group1/feelthatshit_1b.png" />
-							
 						</div>
-						<div class="elem c snstv">
+						<div id="g1c" class="elem c snstv">
 							<img class="shrink" src="assets/group1/feelthatshit_1c.png" />
-							<!--<span><a href="#"><img src="shirts/shirt1.jpg"></a></span>-->
 						</div>
-						<div class="elem d snstv">
+						<div id="g1d" class="elem d snstv">
 							<img src="assets/group1/feelthatshit_1d.png" />
-							<!--<span><a href="#"><img src="shirts/shirt1.jpg"></a></span>-->
 						</div>
-						<div class="elem e snstv">
+						<div id="g1e" class="elem e snstv">
 							<img src="assets/group1/feelthatshit_1e.png" />
-							<!--<span><a href="#"><img src="shirts/shirt1.jpg"></a></span>-->
 						</div>
-						<div class="elem f snstv">
+						<div id="g1f" class="elem showtee f snstv" data-tee="group1/t_1f.jpg">
 							<img class="shrink" src="assets/group1/feelthatshit_1f.png" />
-							<!--<span><a href="#"><img src="shirts/shirt1.jpg"></a></span>-->
 						</div>
-						<div data-clockwise="true" data-max="180" data-left=".3064" class="elem g rotateOnScroll">
+						<div id="g1g" data-clockwise="true" data-max="180" data-left=".3064" class="elem g rotateOnScroll">
 							<img src="assets/group1/feelthatshit_1g.png" />
-							<!--<span><a href="#"><img src="shirts/shirt1.jpg"></a></span>-->
 						</div>
-						<div class="elem h">
+						<div id="g1h" class="elem h">
 							<img src="assets/group1/feelthatshit_1h.png" />
-							<!--<span><a href="#"><img src="shirts/shirt1.jpg"></a></span>-->
 						</div>
-						<div class="elem i">
+						<div id="g1i" class="elem i showtee" data-tee="group1/t_1i.jpg">
 							<img class="shrink" src="assets/group1/feelthatshit_1i.png" />
-							<!--<span><a href="#"><img src="shirts/shirt1.jpg"></a></span>-->
 						</div>
-						<div class="elem j">
+						<div id="g1j" class="elem j">
 							<img src="assets/group1/feelthatshit_1j.gif" />
-							<!--<span><a href="#"><img src="shirts/shirt1.jpg"></a></span>-->
 						</div>
 					</div>
 				</li>
 				<li class="group g2">
-					<div class="elements" data-marginleft="-150" data-width="2387" data-height="1030">
-						<div class="elem a">
+					<div class="elements" data-marginleft="-352" data-width="2388" data-height="1030"  data-margintop="0">
+						<div id="g2a" class="elem showtee a" data-tee="group2/t_2a.jpg">
 							<img src="assets/group2/feelthatshit_2a.gif" />
-							<!--<span><a href="#"><img src="shirts/shirt1.jpg"></a></span>-->
 						</div>
-						<div class="elem b">
+						<div id="g2b" class="elem showtee b" data-tee="group2/t_2b.jpg">
 							<img class="shrink" src="assets/group2/feelthatshit_2b.gif" />
-							<!--<span><a href="#"><img src="shirts/shirt1.jpg"></a></span>-->
 						</div>
-						<div class="elem c">
+						<div id="g2c" class="elem c">
 							<img src="assets/group2/feelthatshit_2c.png" />
-							<!--<span><a href="#"><img src="shirts/shirt1.jpg"></a></span>-->
 						</div>
-						<div class="elem d">
+						<div id="g2d" class="elem d">
 							<img class="shrink" src="assets/group2/feelthatshit_2d.png" />
-							<!--<span><a href="#"><img src="shirts/shirt1.jpg"></a></span>-->
 						</div>
-						<div class="elem e">
+						<div id="g2e" class="elem showtee e" data-tee="group2/t_2e.jpg">
 							<img class="shrink" src="assets/group2/feelthatshit_2e.gif" />
-							<!--<span><a href="#"><img src="shirts/shirt1.jpg"></a></span>-->
 						</div>
-						<div class="elem f">
+						<div id="g2f" class="elem showtee f" data-tee="group2/t_2f.jpg">
 							<img class="shrink" src="assets/group2/feelthatshit_2f.png" />
-							<!--<span><a href="#"><img src="shirts/shirt1.jpg"></a></span>-->
 						</div>
-						<div class="elem g">
+						<div id="g2g" class="elem showtee g" data-tee="group2/t_2g.jpg">
 							<img class="shrink" src="assets/group2/feelthatshit_2g.png" />
-							<!--<span><a href="#"><img src="shirts/shirt1.jpg"></a></span>-->
 						</div>
-						<div class="elem h">
+						<div id="g2h" class="elem h">
 							<img src="assets/group2/feelthatshit_2h.png" />
-							<!--<span><a href="#"><img src="shirts/shirt1.jpg"></a></span>-->
 						</div>
-						<div class="elem i">
+						<div id="g2i" class="elem i">
 							<img class="shrink" src="assets/group2/feelthatshit_2i.png" />
-							<!--<span><a href="#"><img src="shirts/shirt1.jpg"></a></span>-->
 						</div>
-						<div class="elem j">
+						<div id="g2j" class="elem j">
 							<img src="assets/group2/feelthatshit_2j.png" />
-							<!--<span><a href="#"><img src="shirts/shirt1.jpg"></a></span>-->
 						</div>
-						<div class="elem k">
+						<div id="g2k" class="elem showtee k" data-tee="group2/t_2k.jpg">
 							<img class="shrink" src="assets/group2/feelthatshit_2k.png" />
-							<!--<span><a href="#"><img src="shirts/shirt1.jpg"></a></span>-->
 						</div>
 					</div>
 				</li>
 				<li class="group g3">
-					<div class="elements" data-marginleft="150" data-width="2341" data-height="1100">
-						<div class="elem a">
+					<div class="elements" data-marginleft="79" data-width="2341" data-height="1100" data-margintop="0">
+						<div id="g3a" class="elem showtee a" data-tee="group3/t_3a.jpg">
 							<img src="assets/group3/feelthatshit_3a.png" />
 						</div>
-						<div class="elem b">
+						<div id="g3b" class="elem showtee b" data-tee="group3/t_3b.jpg">
 							<img class="shrink" src="assets/group3/feelthatshit_3b.png" />
 						</div>
-						<div class="elem c">
+						<div id="g3c" class="elem c">
 							<img class="shrink" src="assets/group3/feelthatshit_3c.png" />
 						</div>
-						<div class="elem d">
+						<div id="g3d" class="elem d">
 							<img class="shrink" src="assets/group3/feelthatshit_3d.png" />
 						</div>
-						<div class="elem e">
+						<div id="g3e" class="elem e">
 							<img src="assets/group3/feelthatshit_3e.png" />
 						</div>
-						<div class="elem f">
+						<div id="g3f" class="elem showtee f" data-tee="group3/t_3f.jpg">
 							<img class="shrink" src="assets/group3/feelthatshit_3f.png" />
 						</div>
-						<div class="elem g">
+						<div id="g3g" class="elem g">
 							<img src="assets/group3/feelthatshit_3g.png" />
 						</div>
-						<div class="elem h">
+						<div id="g3h" class="elem showtee h" data-tee="group3/t_3h.jpg">
 							<img class="shrink" src="assets/group3/feelthatshit_3h.png" />
 						</div>
-						<div class="elem i">
+						<div id="g3i" class="elem i">
 							<img src="assets/group3/feelthatshit_3i.png" />
 						</div>
-						<div class="elem j">
+						<div id="g3j" class="elem j">
 							<img src="assets/group3/feelthatshit_3j.png" />
 						</div>
-						<div class="elem k">
+						<div id="g3k" class="elem k">
 							<img src="assets/group3/feelthatshit_3k.png" />
 						</div>
 					</div>
 				</li>
 				<li class="group g4">
-					<div class="elements" data-marginleft="30" data-width="1857" data-height="1090">
-						<div class="elem a">
+				<!-- data-marginleft="-35" -->
+					<div class="elements" data-marginleft="-165" data-width="1857" data-height="1090"  data-margintop="0">
+						<div id="g4a" class="elem showtee a" data-tee="group4/t_4a.jpg">
 							<img class="shrink" src="assets/group4/feelthatshit_4a.gif" />
 						</div>
-						<div class="elem b">
+						<div id="g4b" class="elem showtee b" data-tee="group4/t_4b.jpg">
 							<img class="shrink" src="assets/group4/feelthatshit_4b.png" />
 						</div>
-						<div class="elem c">
+						<div id="g4c" class="elem c">
 							<img src="assets/group4/feelthatshit_4c.png" />
 						</div>
-						<div class="elem d">
+						<div id="g4d" class="elem showtee d" data-tee="group4/t_4d.jpg">
 							<img class="shrink" src="assets/group4/feelthatshit_4d.png" />
 						</div>
-						<div class="elem e">
+						<div id="g4e" class="elem showtee e" data-tee="group4/t_4e.jpg">
 							<img class="shrink" src="assets/group4/feelthatshit_4e.png" />
 						</div>
-						<div class="elem f">
+						<div id="g4f" class="elem f">
 							<img src="assets/group4/feelthatshit_4f.png" />
 						</div>
-						<div class="elem g">
+						<div id="g4g" class="elem g">
 							<img src="assets/group4/feelthatshit_4g.png" />
 						</div>
-						<div class="elem h">
+						<div id="g4h" class="elem h">
 							<img class="shrink" src="assets/group4/feelthatshit_4h.png" />
 						</div>
-						<div class="elem i">
+						<div id="g4i" class="elem showtee i" data-tee="group4/t_4i.jpg">
 							<img class="shrink" src="assets/group4/feelthatshit_4i.png" />
 						</div>
-						<div class="elem j">
+						<div id="g4j" class="elem j">
 							<img src="assets/group4/feelthatshit_4j.png" />
 						</div>
-						<div class="elem k">
+						<div id="g4k" class="elem k">
 							<img src="assets/group4/feelthatshit_4k.png" />
 						</div>
 					</div>
 				</li>
 				<li class="group g5">
-					<div class="elements" data-marginleft="-285" data-width="881" data-height="981">
-						<div class="elem a">
+					<!-- data-marginleft="-288" -->
+					<div class="elements" data-marginleft="-350" data-width="881" data-height="981" data-margintop="62">
+						<div id="g5a" class="elem showtee a" data-tee="group5/t_5a.jpg">
 							<img class="shrink" src="assets/group5/feelthatshit_5a.gif" />
 						</div>
-						<div class="elem b">
+						<div id="g5b" class="elem b">
 							<img src="assets/group5/feelthatshit_5b.png" />
 						</div>
-						<div class="elem c">
+						<div id="g5c" class="elem showtee c" data-tee="group5/t_5c.jpg">
 							<img class="shrink" src="assets/group5/feelthatshit_5c.png" />
 						</div>
-						<div class="elem d">
+						<div id="g5d" class="elem d">
 							<img src="assets/group5/feelthatshit_5d.png" />
 						</div>
-						<div class="elem e">
+						<div id="g5e" class="elem e">
 							<img src="assets/group5/feelthatshit_5e.png" />
 						</div>
 					</div>
 				</li>
 				<li class="group g6">
-					<div class="elements" data-marginleft="-254" data-width="1613" data-height="1126">
-						<div class="elem a">
+					<div class="elements" data-marginleft="-255" data-width="1609" data-height="1061" data-margintop="0">
+						<div id="g6a" class="elem showtee a" data-tee="group6/t_5a.jpg">
 							<img src="assets/group6/feelthatshit_6a.png" />
 						</div>
-						<div class="elem b">
+						<div id="g6b" class="elem b">
 							<img class="shrink" src="assets/group6/feelthatshit_6b.png" />
 						</div>
-						<div class="elem c">
+						<div id="g6c" class="elem showtee c" data-tee="group6/t_5c.jpg">
 							<img src="assets/group6/feelthatshit_6c.png" />
 						</div>
-						<div class="elem d">
+						<div id="g6d" class="elem d">
 							<img src="assets/group6/feelthatshit_6d.png" />
 						</div>
-						<div class="elem e">
+						<div id="g6e" class="elem e">
 							<img src="assets/group6/feelthatshit_6e.png" />
 						</div>
-						<div class="elem f">
+						<div id="g6f" class="elem f">
 							<img src="assets/group6/feelthatshit_6f.png" />
 						</div>
-						<div class="elem g">
+						<div id="g6g" class="elem g">
 							<img src="assets/group6/feelthatshit_6g.png" />
 						</div>
-						<div class="elem h">
+						<div id="g6h" class="elem h">
 							<img class="shrink" src="assets/group6/feelthatshit_6h.png" />
 						</div>
-						<div class="elem i">
+						<div id="g6i" class="elem i">
 							<img class="shrink" src="assets/group6/feelthatshit_6i.png" />
 						</div>
-						<div class="elem j">
+						<div id="g6j" class="elem j">
 							<img src="assets/group6/feelthatshit_6j.png" />
 						</div>
-						<div class="elem k">
+						<div id="g6k" class="elem k">
 							<img class="shrink" src="assets/group6/feelthatshit_6k.png" />
 						</div>
-						<div class="elem l">
+						<div id="g6l" class="elem l">
 							<img src="assets/group6/feelthatshit_6l.png" />
 						</div>
-						<div class="elem m">
+						<div id="g6m" class="elem m">
 							<img src="assets/group6/feelthatshit_6m.png" />
 						</div>
 					</div>
 				</li>
 				<li class="group g7">
-					<div class="elements" data-marginleft="80" data-width="1596" data-height="1100">
-						<div class="elem a">
+					<div class="elements" data-marginleft="80" data-width="1596" data-height="1072" data-margintop="28">
+						<div id="g7a" class="elem showtee a" data-tee="group7/t_7a.jpg">
 							<img src="assets/group7/feelthatshit_7a.gif" />
 						</div>
-						<div class="elem b">
+						<div id="g7b" class="elem showtee b" data-tee="group7/t_7b.jpg">
 							<img src="assets/group7/feelthatshit_7b.png" />
 						</div>
-						<div class="elem c">
+						<div id="g7c" class="elem showtee c" data-tee="group7/t_7c.jpg">
 							<img src="assets/group7/feelthatshit_7c.gif" />
 						</div>
-						<div class="elem d">
+						<div id="g7d" class="elem d">
 							<img src="assets/group7/feelthatshit_7d.png" />
 						</div>
-						<div class="elem e">
+						<div id="g7e" class="elem e">
 							<img src="assets/group7/feelthatshit_7e.png" />
 						</div>
-						<div class="elem f">
+						<div id="g7f" class="elem showtee f" data-tee="group7/t_7f.jpg">
 							<img src="assets/group7/feelthatshit_7f.png" />
 						</div>
-						<div class="elem g">
+						<div id="g7g" class="elem showtee g" data-tee="group7/t_7g.jpg">
 							<img src="assets/group7/feelthatshit_7g.png" />
 						</div>
-						<div class="elem h">
+						<div id="g7h" class="elem h">
 							<img src="assets/group7/feelthatshit_7h.png" />
 						</div>
-						<div class="elem i">
+						<div id="g7i" class="elem i">
 							<img src="assets/group7/feelthatshit_7i.png" />
 						</div>
 					</div>
 				</li>
 				<li class="group g8">
-					<div class="elements" data-marginleft="0" data-width="1975" data-height="1084">
-						<div class="elem a">
+					<div class="elements" data-marginleft="-15" data-width="1975" data-height="1084" data-margintop="0">
+						<div id="g8a" class="elem showtee a" data-tee="group8/t_8a.jpg">
 							<img class="shrink" src="assets/group8/feelthatshit_8a.gif" />
 						</div>
-						<div class="elem b">
+						<div id="g8b" class="elem showtee b" data-tee="group8/t_8b.jpg">
 							<img class="shrink" src="assets/group8/feelthatshit_8b.png" />
 						</div>
-						<div class="elem c">
+						<div id="g8c" class="elem showtee c" data-tee="group8/t_8c.jpg">
 							<img class="shrink" src="assets/group8/feelthatshit_8c.png" />
 						</div>
-						<div class="elem d">
+						<div id="g8d" class="elem showtee d" data-tee="group8/t_8d.jpg">
 							<img class="shrink" src="assets/group8/feelthatshit_8d.png" />
 						</div>
-						<div class="elem e">
+						<div id="g8e" class="elem e">
 							<img src="assets/group8/feelthatshit_8e.png" />
 						</div>
-						<div class="elem f">
+						<div id="g8f" class="elem f">
 							<img src="assets/group8/feelthatshit_8f.png" />
 						</div>
-						<div class="elem g">
+						<div id="g8g" class="elem g">
 							<img src="assets/group8/feelthatshit_8g.png" />
 						</div>
 					</div>
@@ -347,9 +418,10 @@
 			</ul>
 		</div>
 	</div>
-	<!--<div class="fixedoutput">
-		<textarea class="output" value=""></textarea>
-	</div>-->
+	<div class="teebox">
+		<img src="assets/t_.png" />
+	</div>
+	<textarea id="console"></textarea>
 
 <!--PRECARGA TODO-->
 
@@ -358,23 +430,6 @@
 		$("#loading").fadeOut("slow");
 		})
 	</script>
-
-<!--PRECARGA 5 SEG 
-
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-
-	<script type="text/javascript">
-		$("#loading").click(function(){
-		$(".target").fadeOut( 'slow', function(){ 
-	  		});
-  		});
-  
-  	var fade_out = function() {
-		$("#loading").fadeOut('slow') .empty();
-		}
-		setTimeout(fade_out, 5000);
-	</script> 
--->
 
 	<script type="text/javascript" src="js/index.js"></script>
 
